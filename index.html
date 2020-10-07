@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/60c669dcd9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Home</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+    <a class="navbar-brand" href="#">dekodeimos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<section id="about-me" class="">
+  <div class="box">
+    <h1 class="about-heading">About Me</h1>
+  </div>
+  <div class="row about-row">
+    <div class="col-lg-4">
+      <div class="card shadow-lg">
+        <img src="images/usc-logo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Third Year Student of Computer Engineering in the University of San Carlos. Currently majoring in Software.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card shadow-lg">
+        <img src="images/programming.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">An aspiring mobile and web developer. I aim to be a Senior Software Engineer. I want to not just work but to most importantly, contribute in a large company.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card shadow-lg">
+        <img src="images/study.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Always ready to learn something new. Solving problems and applying practical solutions based from programming experience.</p>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+<section id="projects">
+  <div class="box">
+    <h1 class="projects-heading">Top Projects</h1>
+  </div>
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h5 class="project-name">Book List</h5>
+          </button>
+        </h2>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          This project was made by me from scratch. This web application track the books that I have been reading. This project is a test for myself
+          to apply the things that I have learned from web development, especially handling NoSQL Databases. This website can enable me to input the author, book title, and genre. This will also track the date and day the book entry was posted. Furthermore, any entries can be updated or deleted as well. <br>
+          <br>
+          <div class="tech-stack">
+            Framework: ExpressJS <br>
+            Database: MongoDB <br>
+            Programming Languages: CSS, HTML, and JavaScript <br>
+            Additional Helpers: EJS, MongoDB Atlas <br>
+            Link to Peoject: <a href="https://still-shelf-57338.herokuapp.com/">Book List</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h5 class="project-name">Newsletter Subscription</h5>
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          This project made use of MailChimp's API. This will enable people with the link to input their information and store that information into my MailChimp account.
+          This will enable me to send emails to those people who signed-up all at once if I wish to do so. This required a lot of reading of MailChimp's API documentation.
+          <br><br>
+          <div class="tech-stack">
+            Framework: ExpressJS <br>
+            Programming Languages: CSS, HTML, and JavaScript <br>
+            Link to Project: <a href="https://glacial-beyond-04539.herokuapp.com/">Newsletter</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h5 class="project-name">Dark Jokes</h5>
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+          This project was made out of boredom and does not intend to offend anybody. If you are easily offended with sensitive issues like pedophilia, racism, incest, and the like, please
+          do not continue visiting this website. If you wish to continue, continue at your own risk. This website makes use of an API wherein you can request jokes. The functionality I have implemented
+          is a simple request and posting it in my own website. <br><br>
+          <div class="tech-stack">
+            Framework: ExpressJS <br>
+            Programming Languages: CSS, HTML, and JavaScript <br>
+            Link to Project: <a href="https://cryptic-atoll-48017.herokuapp.com/">Dark Jokes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer id="footer">
+
+<a class="soc-a" href="https://github.com/charlesausejojr"><i class="soc-med-icon fab fa-github fa-2x"></i></a>
+<a class="soc-a" href="https://www.facebook.com/cjausejo"><i class="soc-med-icon fab fa-facebook fa-2x"></i></a>
+<a class="soc-a" href="https://twitter.com/Charlie_Preach"><i class="soc-med-icon fab fa-twitter fa-2x"></i></a>
+<a class="soc-a" href="https://www.instagram.com/ausejomagnifico/"><i class="soc-med-icon fab fa-instagram fa-2x"></i></a>
+
+
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
