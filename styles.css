@@ -81,9 +81,6 @@ body{
   text-decoration: none;
   color: #14ffec;
 }
-.card{
-
-}
 .card-img-top{
   max-width: 400px;
   height: 200px;
@@ -117,6 +114,22 @@ body{
   text-align: center;
   padding: 7% 15%;
 }
-.soc-a{
 
+@media (max-width: 1028px) {
+  .navbar{
+    text-align: right;
+  }
+  #about-me{
+    text-align: center;
+  }
+  .card{
+    max-width: 400px;
+  }
+  .about-heading{
+    text-align: center;
+  }
+  .project-accordion{
+    display: flex;
+    justify-content: center;
+  }
 }
